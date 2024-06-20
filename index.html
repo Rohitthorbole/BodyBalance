@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>BodyBalance</title>
+</head>
+
+<body style='font-family: "Noto Serif", serif;'>
+    <div class="container h-full w-full absolute flex justify-center items-center" style="background-color: #8AAAE5;">
+        <div class="box absolute h-[450px] w-[300px] rounded-md shadow-sm" style="background-color: #FFFFFF;">
+            <div class="header flex justify-center">
+                <span class="font-bold text-[30px] mt-3" style="color: #083c9d;">BMI Calculator</span>
+            </div>
+            <div class="input grid justify-center mt-6 relative gap-5">
+                <input type="number" id="weight" placeholder="weight in kg"
+                    class="border pl-10 m-auto w-[180px] p-2 rounded-md text-blue-500 hover:border-blue-400 focus:border-blue-400">
+                <input type="number" id="height" placeholder="height in cm"
+                    class="border pl-10 m-auto w-[180px] p-2 rounded-md text-blue-500 hover:border-blue-400 focus:border-blue-400">
+            </div>
+            <div class="flex justify-center relative space-x-5 mt-6">
+                <button class="border bg-blue-200 pl-3 pr-3 rounded-md hover:bg-blue-300" id="calculate">Calculate</button>
+                <button class="border bg-blue-200 pl-3 pr-3 rounded-md hover:bg-blue-300" id="clear">Clear</button>
+            </div>
+            <div class="h-10 bg-slate-100 mt-4 w-24 m-auto rounded-lg flex justify-center items-center">
+                <div id="result" class="text-blue-500"></div>
+            </div>
+            <div class="flex justify-center mt-5">
+                <table class="border border-collapse">
+                    <tr class="border" style="background-color: #336699; color: white;">
+                        <th>Category</th>
+                        <th>Percentile Range</th>
+                    </tr>
+                    <tr class="border bg-slate-100">
+                        <td class="border">Underweight</td>
+                        <td class="flex items-center justify-center"    >&lt;18.5</td>
+                    </tr>
+                    <tr class="border bg-slate-200">
+                        <td class="border">Healthy weigh</td>
+                        <td class="flex items-center justify-center">18.5-25</td>
+                    </tr>
+                    <tr class="border bg-slate-100">
+                        <td class="border">overweigh</td>
+                        <td class="flex items-center justify-center">25-30</td>
+                    </tr>
+                    <tr class="border bg-slate-200">
+                        <td class="border">Obese</td>  
+                        <td class="flex items-center justify-center">&gt;30</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
