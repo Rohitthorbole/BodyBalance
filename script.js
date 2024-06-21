@@ -25,5 +25,5 @@ calculate.addEventListener('click', () => {
 clear.addEventListener('click', () => {
     weight.value = '';
     height.value = '';
-    display.value = '';
+    display.innerHTML = 'Result';
 })
